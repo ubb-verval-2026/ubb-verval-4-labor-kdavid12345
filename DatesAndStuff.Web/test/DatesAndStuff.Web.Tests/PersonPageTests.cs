@@ -128,7 +128,7 @@ public class PersonPageTests
         salaryAfterSubmission.Should().BeApproximately(expectedSalary, 0.001);
     }
 
-    [TestCase(-11)]
+    [TestCase(-10)]
     [TestCase(-17)]
     [TestCase(-20)]
     public void Person_SalaryIncreasePercentageSmallerThanMinusTen_ShouldShowValidationErrors(double salaryIncreasePercentage)
